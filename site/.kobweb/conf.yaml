@@ -1,0 +1,14 @@
+site:
+  title: "FirstProject"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/firstproject.js"
+      api: "build/libs/firstproject.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/firstproject.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
